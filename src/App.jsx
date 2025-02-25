@@ -1,21 +1,20 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Home from "./pages/Home";
-import Movies from "./pages/Movies";
-import TvShows from "./pages/TvShows";
 import Header from "./components/Header";
+import Slider from "./components/slider";
+import ProductionHouse from "./components/ProductionHouse";
+import GenreMovieList from "./components/GenreMovieList";
 
 function App() {
 
   return (
     <>
-    <Header />
-      {/* <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/movies" element={<Movies />}/>
-          <Route path="/tvshows" element={<TvShows />}/>
-        </Routes>
-      </BrowserRouter> */}
+      <Header />
+      
+      <Slider />
+
+      <ProductionHouse />
+
+      <GenreMovieList />
     </>
   )
 }
